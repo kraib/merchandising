@@ -1,0 +1,205 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="lucidace.com.merchandising.fragments.products.Form3Fragment">
+
+<LinearLayout
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/which_brands"/>
+
+    <EditText
+        style="@style/FormInput"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/edit_text_height"
+        android:id="@+id/brands" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+
+        android:text="@string/why"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+/>
+
+    <EditText
+        style="@style/FormInput"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/edit_text_height"
+        android:id="@+id/why" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:text="@string/general_feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/textView2" />
+
+    <EditText
+        style="@style/FormInput"
+
+        android:inputType="textMultiLine"
+        android:lines="8"
+        android:minLines="6"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/feedback" />
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal" android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:background="@drawable/dotted_bg"
+            android:id="@+id/image1PhotoContainer"
+            android:clickable="true"
+
+            android:layout_width="80dp"
+            android:layout_height="80dp">
+
+            <ImageView
+                android:padding="5dp"
+                android:id="@+id/image1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+            <ImageView
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/add_camera"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:layout_alignParentBottom="true"
+                android:textAllCaps="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_marginBottom="10dp"
+                android:textSize="11sp"
+                android:text="Image 1"
+                android:id="@+id/textView5" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/image2PhotoContainer"
+            android:clickable="true"
+
+            android:background="@drawable/dotted_bg"
+            android:layout_marginLeft="20dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp">
+            <ImageView
+                android:padding="5dp"
+                android:id="@+id/image2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+            <ImageView
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/add_camera"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+            <TextView
+                android:layout_alignParentBottom="true"
+                android:textAllCaps="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_marginBottom="10dp"
+                android:textSize="11sp"
+                android:text="Image 2"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@drawable/dotted_bg"
+            android:layout_width="80dp"
+            android:clickable="true"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/image3PhotoContainer"
+            android:layout_height="80dp">
+
+            <ImageView
+                android:padding="5dp"
+                android:id="@+id/image3"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+            <ImageView
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/add_camera"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:layout_alignParentBottom="true"
+                android:textAllCaps="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_marginBottom="10dp"
+                android:textSize="11sp"
+                android:text="Image 3"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <Button
+
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Back"
+            android:id="@+id/back"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+
+            android:layout_gravity="left"
+            android:background="@color/colorPrimary"
+            />
+
+
+        <Button
+            android:layout_alignParentRight="true"
+
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Preview"
+            android:id="@+id/next"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+
+            android:background="@color/colorPrimary"
+            android:layout_gravity="right" />
+    </RelativeLayout>
+</LinearLayout>
+</FrameLayout>

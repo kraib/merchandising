@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="police.mcash.com.trafficpoliceapp.views.AddFine">
+    <item android:id="@+id/action_home" android:title="@string/home"
+        android:orderInCategory="50" app:showAsAction="never" />
+    <item android:id="@+id/action_logout" android:title="@string/logout_text"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_refresh" android:title="@string/data_refresh"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:orderInCategory="200" app:showAsAction="never" />
+</menu>

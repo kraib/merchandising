@@ -1,0 +1,276 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="lucidace.com.merchandising.fragments.products.SurveyResultsFragment">
+
+<LinearLayout
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="fill_parent"
+        android:paddingTop="10px"
+        android:paddingBottom="10px"
+        android:paddingLeft="10dp"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="@string/sosandprice"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="horizontal"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:text="@string/name"
+            android:id="@+id/textView" />
+
+
+
+        <TextView
+
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:text="SOS"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_gravity="center_vertical"
+
+            android:layout_height="wrap_content"
+            android:id="@+id/editText" />
+
+        <TextView
+            android:textStyle="bold"
+            android:text="Price"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText2"
+            android:layout_gravity="center_vertical" />
+
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:paddingBottom="20dp"
+
+        tools:listitem="@layout/list_item_survery_result"
+        android:scrollbars="vertical" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="fill_parent"
+        android:paddingTop="10px"
+        android:paddingBottom="10px"
+        android:paddingLeft="10dp"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="@string/compitetorprice"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1.2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="13dp"
+            android:textStyle="bold"
+            android:text="@string/name"
+            />
+
+
+
+        <TextView
+
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:text="Competitor A"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_gravity="center_vertical"
+
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:textStyle="bold"
+            android:text="Competitor B"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center_vertical" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:paddingBottom="20dp"
+        tools:listitem="@layout/list_item_survery_result"
+        android:scrollbars="vertical" />
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="fill_parent"
+        android:paddingTop="10px"
+        android:paddingBottom="10px"
+        android:paddingLeft="10dp"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="@string/which_brands"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:padding="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/brands" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="fill_parent"
+        android:paddingTop="10px"
+        android:paddingBottom="10px"
+        android:paddingLeft="10dp"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="@string/why"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:padding="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/why" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="fill_parent"
+        android:paddingTop="10px"
+        android:paddingBottom="10px"
+        android:paddingLeft="10dp"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="@string/general_feedback"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:padding="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/feedback" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="fill_parent"
+        android:paddingTop="10px"
+        android:paddingBottom="10px"
+        android:paddingLeft="10dp"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="@string/gallery"
+        android:layout_height="wrap_content" />
+    <GridView
+        android:id="@+id/grid"
+        android:numColumns="3"
+        android:padding="10dp"
+        android:horizontalSpacing="10dp"
+    android:verticalSpacing="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></GridView>
+
+    <RelativeLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <Button
+
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Back"
+            android:id="@+id/back"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+
+            android:layout_gravity="left"
+            android:background="@color/colorPrimary"
+            />
+
+        <Button
+            android:layout_alignParentRight="true"
+
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Draft"
+            android:id="@+id/draft"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+
+            android:background="@color/colorPrimary"
+            android:layout_gravity="right" />
+
+
+        <Button
+            android:layout_alignParentRight="true"
+
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Save"
+            android:id="@+id/next"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+
+            android:background="@color/colorPrimary"
+            android:layout_gravity="right" />
+    </RelativeLayout>
+
+</LinearLayout>
+
+</FrameLayout>

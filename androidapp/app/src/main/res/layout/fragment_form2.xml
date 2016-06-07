@@ -1,0 +1,94 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="lucidace.com.merchandising.fragments.products.Form1Fragment">
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/name"
+                android:id="@+id/textView" />
+
+
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:text="Competitor A"
+                android:layout_weight="1"
+                android:layout_width="fill_parent"
+                android:layout_gravity="center_vertical"
+
+                android:layout_height="wrap_content"
+                android:id="@+id/editText" />
+
+            <TextView
+                android:textStyle="bold"
+                android:text="Competitor B"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText2"
+                android:layout_gravity="center_vertical" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            tools:listitem="@layout/list_item_survey"
+            android:scrollbars="vertical" />
+
+        <RelativeLayout
+
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        <Button
+
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Back"
+            android:id="@+id/back"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+
+            android:layout_gravity="left"
+            android:background="@color/colorPrimary"
+            />
+
+
+        <Button
+            android:layout_alignParentRight="true"
+
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Next"
+            android:id="@+id/next"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+
+            android:background="@color/colorPrimary"
+            android:layout_gravity="right" />
+    </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>
